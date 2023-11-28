@@ -1,0 +1,102 @@
+/* Reset de estilos para eliminar márgenes y rellenos predeterminados del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    display: grid;
+    grid-template-rows: 1fr auto; /* Crea dos filas, la primera ocupa todo el espacio restante, la segunda se ajusta al contenido del pie de página */
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #0000003a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+small {
+    color: #777;
+}
+
+button {
+    padding: 10px;
+    background-color: #00000050;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+#results {
+    margin-top: 40px;
+    white-space: pre-wrap;
+}
+
+
+
+footer{
+    background-color: #1b2a3b;
+    margin: auto;
+    color: #fff;
+    text-align: center; 
+}
+
+
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 52Px;
+    height: 52px;
+    line-height: 52px;
+    margin: 0px 5px;
+    font-size: 20px;
+    transition: .3s;
+    
+}
+
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    
+    }
+
+    .redes a {
+        margin: 0 5px;
+        font-size: 18px;
+    }
+}
